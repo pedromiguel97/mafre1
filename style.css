@@ -1,0 +1,144 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffb6c1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d6336c;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    background-color: #ffe4e1;
+    color: #333;
+}
+
+.logo-img {
+    height: 200px;
+    /* estava 100px */
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.carta {
+    background-color: #fff0f8;
+    border-left: 5px solid #ff69b4;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.carta h2 {
+    color: #d6336c;
+    margin-bottom: 10px;
+}
+
+/* Nave ativo */
+nav a.active {
+    text-decoration: underline;
+}
+
+/* Feed */
+.feed {
+    max-width: 900px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+}
+
+.post {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.post-meta {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    background: #ffe4ef;
+    color: #d6336c;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: .9em;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.post p {
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+/* Galeria 3 fotos no mesmo post */
+.post-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.post-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+    .post-gallery {
+        grid-template-columns: 1fr;
+    }
+}
